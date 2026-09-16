@@ -11,10 +11,11 @@
     <color name="button_surface">#1f3c4143</color>
     <color name="button_surface_pressed">#3d3c4143</color>
 
-    <!-- The toolbar, and the plate behind the favourites grid. Web pages paint their own
-         background over the rest, so this shows during a load and nowhere else. -->
-    <color name="chrome_background">#ffffff</color>
-    <color name="page_background">#ffffff</color>
+    <!-- The toolbar, and the plate behind the favourites grid. Not pure white: the launcher's
+         daytime home artwork (drawable/bg_home.png) measures #f4f4f4, and side by side the
+         difference between that and #ffffff is visible as a brighter panel. -->
+    <color name="chrome_background">#f4f4f4</color>
+    <color name="page_background">#f4f4f4</color>
 
     <!-- The line under the toolbar: present enough to separate it from the page, faint
          enough that it never competes with the page's own content. -->
