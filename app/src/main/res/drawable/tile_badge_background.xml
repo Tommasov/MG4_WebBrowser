@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The initial-letter badge on a favourite tile. Its colour is set in code from the host
+     name, so the solid here is only what shows if that ever fails. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/accent" />
+</shape>

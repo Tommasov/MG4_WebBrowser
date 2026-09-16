@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tuned for a 1920x720 head unit read from about a metre away, in a seat, sometimes with
+     the engine running. Text sizes follow MG4 Simple Launcher's vocabulary, which it read off
+     the factory launcher's own layouts: title 30, body/label 28, button 26, secondary 20. -->
+<resources>
+    <dimen name="screen_padding">24dp</dimen>
+
+    <!-- Toolbar. 96dp so the round buttons inside it are a target a gloved hand hits without
+         aiming; the address field is the same height for the same reason. -->
+    <dimen name="toolbar_height">96dp</dimen>
+    <dimen name="toolbar_padding_h">16dp</dimen>
+    <dimen name="toolbar_gap">8dp</dimen>
+    <dimen name="toolbar_button_size">80dp</dimen>
+    <dimen name="toolbar_icon_padding">18dp</dimen>
+
+    <!-- The address bar carries body size, not button size: it is the one thing in the
+         chrome that is read rather than pressed. -->
+    <dimen name="address_text_size">28sp</dimen>
+    <dimen name="address_padding_h">24dp</dimen>
+    <dimen name="native_button_radius">10dp</dimen>
+
+    <!-- Thicker than a phone's hairline progress bar. The car's connection is slow enough
+         that "is it doing anything?" is a real question, and the answer has to carry to the
+         driver's seat. -->
+    <dimen name="progress_height">6dp</dimen>
+
+    <!-- Favourites grid. Five tiles across: 1920 less 2x24 padding leaves 1872, and five
+         340dp tiles with 16dp between them come to 1764 — the slack keeps the row off the
+         screen edges at the far right, where the bezel curves on this head unit. -->
+    <dimen name="tile_width">340dp</dimen>
+    <dimen name="tile_height">180dp</dimen>
+    <dimen name="tile_gap">16dp</dimen>
+    <dimen name="tile_padding">20dp</dimen>
+    <!-- The initial-letter badge. Sized between the launcher's drawer icon (88dp) and its
+         favourite icon (160dp): this tile carries two lines of text beside it, that one
+         carries a label underneath. -->
+    <dimen name="tile_badge_size">88dp</dimen>
+    <dimen name="tile_badge_text_size">44sp</dimen>
+    <dimen name="tile_title_size">30sp</dimen>
+    <dimen name="tile_host_size">20sp</dimen>
+
+    <dimen name="favorites_title_size">30sp</dimen>
+    <!-- The engine notice at the foot of the home screen. Reference material, not something
+         to read while moving, so it sits a tier below everything else. -->
+    <dimen name="footnote_size">20sp</dimen>
+</resources>

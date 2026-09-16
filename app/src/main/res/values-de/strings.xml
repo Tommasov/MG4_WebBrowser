@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="address_hint">Adresse oder Suche</string>
+    <string name="cd_back">Zurück</string>
+    <string name="cd_forward">Vorwärts</string>
+    <string name="cd_reload">Neu laden</string>
+    <string name="cd_stop">Anhalten</string>
+    <string name="cd_home">Startseite</string>
+    <string name="cd_add_favorite">Zu Favoriten hinzufügen</string>
+
+    <string name="favorites_title">Favoriten</string>
+    <string name="favorites_empty">Noch keine Favoriten. Öffnen Sie eine Seite und legen Sie sie mit der Schaltfläche + in der Leiste hier ab.</string>
+    <string name="webview_version">Engine: System-WebView %1$s. Sie gehört zur Firmware des Fahrzeugs und erhält nie Updates.</string>
+    <string name="webview_version_unknown">Engine: die System-WebView des Fahrzeugs, die nie Updates erhält.</string>
+
+    <string name="favorite_added">Zu den Favoriten hinzugefügt</string>
+    <string name="favorite_exists">Bereits in den Favoriten</string>
+    <string name="favorite_nothing_to_add">Öffnen Sie zuerst eine Seite</string>
+    <string name="remove_favorite_title">Favorit entfernen?</string>
+    <string name="remove_favorite_message">%1$s wird vom Startbildschirm entfernt.</string>
+    <string name="remove">Entfernen</string>
+    <string name="cancel">Abbrechen</string>
+
+    <string name="download_started">%1$s wird heruntergeladen</string>
+    <string name="download_title">Download</string>
+    <string name="download_progress">%1$s — %2$d%%</string>
+    <string name="download_failed">Download fehlgeschlagen: %1$s</string>
+    <string name="download_saved">Gespeichert: %1$s</string>
+    <string name="download_busy">Es läuft bereits ein Download</string>
+
+    <string name="install_title">App installieren?</string>
+    <string name="install_message">%1$s wurde heruntergeladen. Jetzt installieren?</string>
+    <string name="install">Installieren</string>
+    <string name="install_permission_title">Berechtigung erforderlich</string>
+    <string name="install_permission_message">Android muss diesem Browser erlauben, Apps zu installieren, bevor er die Datei an das Installationsprogramm übergeben kann. Auf dem nächsten Bildschirm erteilen Sie die Erlaubnis; kehren Sie danach hierher zurück, dann geht die Installation weiter.</string>
+    <string name="open_settings">Einstellungen öffnen</string>
+    <string name="install_no_handler">Auf diesem System gibt es kein Installationsprogramm für die Datei</string>
+
+    <string name="ssl_error_title">Verbindung nicht überprüft</string>
+    <string name="ssl_error_message">Das Zertifikat für %1$s konnte nicht überprüft werden. Auf einer WLAN- oder Ladesäulen-Anmeldeseite ist das normal, anderswo ein Grund aufzuhören.\n\nTrotzdem fortfahren?</string>
+    <string name="continue_anyway">Fortfahren</string>
+    <string name="page_error">Die Seite konnte nicht geöffnet werden: %1$s</string>
+    <string name="no_app_for_link">Keine App in diesem Fahrzeug kann diesen Link öffnen</string>
+</resources>

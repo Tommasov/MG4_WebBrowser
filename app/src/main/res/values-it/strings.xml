@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- L'apostrofo in una risorsa Android va sempre preceduto da backslash. -->
+<resources>
+    <string name="address_hint">Indirizzo o ricerca</string>
+    <string name="cd_back">Indietro</string>
+    <string name="cd_forward">Avanti</string>
+    <string name="cd_reload">Ricarica</string>
+    <string name="cd_stop">Interrompi</string>
+    <string name="cd_home">Home</string>
+    <string name="cd_add_favorite">Aggiungi ai preferiti</string>
+
+    <string name="favorites_title">Preferiti</string>
+    <string name="favorites_empty">Nessun preferito. Apri una pagina e usa il pulsante + nella barra per tenerla qui.</string>
+    <string name="webview_version">Motore: WebView di sistema %1$s. Fa parte del firmware dell\'auto e non riceve mai aggiornamenti.</string>
+    <string name="webview_version_unknown">Motore: la WebView di sistema dell\'auto, che non riceve mai aggiornamenti.</string>
+
+    <string name="favorite_added">Aggiunto ai preferiti</string>
+    <string name="favorite_exists">Già nei preferiti</string>
+    <string name="favorite_nothing_to_add">Apri prima una pagina</string>
+    <string name="remove_favorite_title">Rimuovere il preferito?</string>
+    <string name="remove_favorite_message">%1$s sarà tolto dalla schermata iniziale.</string>
+    <string name="remove">Rimuovi</string>
+    <string name="cancel">Annulla</string>
+
+    <string name="download_started">Scaricamento di %1$s</string>
+    <string name="download_title">Scaricamento</string>
+    <string name="download_progress">%1$s — %2$d%%</string>
+    <string name="download_failed">Scaricamento non riuscito: %1$s</string>
+    <string name="download_saved">Salvato: %1$s</string>
+    <string name="download_busy">C\'è già uno scaricamento in corso</string>
+
+    <string name="install_title">Installare l\'app?</string>
+    <string name="install_message">%1$s è stato scaricato. Lo installo adesso?</string>
+    <string name="install">Installa</string>
+    <string name="install_permission_title">Serve un permesso</string>
+    <string name="install_permission_message">Android deve autorizzare questo browser a installare app prima che possa passare il file all\'installer. Nella schermata che segue puoi concederlo; torna qui e l\'installazione riprende.</string>
+    <string name="open_settings">Apri impostazioni</string>
+    <string name="install_no_handler">Su questo sistema non c\'è un installer a cui passare il file</string>
+
+    <string name="ssl_error_title">Connessione non verificata</string>
+    <string name="ssl_error_message">Non è stato possibile verificare il certificato di %1$s. Su una pagina di accesso al Wi-Fi o a una colonnina è normale; altrove è un motivo per fermarsi.\n\nContinuare comunque?</string>
+    <string name="continue_anyway">Continua</string>
+    <string name="page_error">Impossibile aprire la pagina: %1$s</string>
+    <string name="no_app_for_link">Nessuna app su quest\'auto può aprire quel collegamento</string>
+</resources>

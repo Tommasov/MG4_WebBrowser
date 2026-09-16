@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One favourite tile: a coloured initial, the page title, the host underneath.
+     A captured favicon was the obvious alternative and is the wrong one here — the icons a
+     2018 Chromium hands back are 16 or 32 pixels, and blown up to badge size on a screen read
+     from a metre away they are mush. A letter stays a letter. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/tile_width"
+    android:layout_height="@dimen/tile_height"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/tile_selector"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/tile_padding">
+
+    <TextView
+        android:id="@+id/tile_badge"
+        android:layout_width="@dimen/tile_badge_size"
+        android:layout_height="@dimen/tile_badge_size"
+        android:background="@drawable/tile_badge_background"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/tile_badge_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/tile_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tile_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/tile_title_size" />
+
+        <TextView
+            android:id="@+id/tile_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/tile_host_size" />
+    </LinearLayout>
+</LinearLayout>

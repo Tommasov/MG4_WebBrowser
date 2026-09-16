@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default (English). Translations in values-it, values-de, values-es, values-fr.
+     An apostrophe in an Android string resource must be escaped with a backslash. -->
+<resources>
+    <string name="app_name">MG4 Browser</string>
+
+    <!-- Toolbar -->
+    <string name="address_hint">Address or search</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_forward">Forward</string>
+    <string name="cd_reload">Reload</string>
+    <string name="cd_stop">Stop</string>
+    <string name="cd_home">Home</string>
+    <string name="cd_add_favorite">Add to favourites</string>
+
+    <!-- Home screen -->
+    <string name="favorites_title">Favourites</string>
+    <string name="favorites_empty">No favourites yet. Open a page, then use the + button in the toolbar to keep it here.</string>
+    <string name="webview_version">Engine: system WebView %1$s. It is part of the car\'s firmware and never receives updates.</string>
+    <string name="webview_version_unknown">Engine: the car\'s system WebView, which never receives updates.</string>
+
+    <!-- Favourites -->
+    <string name="favorite_added">Added to favourites</string>
+    <string name="favorite_exists">Already in favourites</string>
+    <string name="favorite_nothing_to_add">Open a page first</string>
+    <string name="remove_favorite_title">Remove favourite?</string>
+    <string name="remove_favorite_message">%1$s will be removed from the home screen.</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Downloads -->
+    <string name="download_started">Downloading %1$s</string>
+    <string name="download_title">Downloading</string>
+    <string name="download_progress">%1$s — %2$d%%</string>
+    <string name="download_failed">Download failed: %1$s</string>
+    <string name="download_saved">Saved: %1$s</string>
+    <string name="download_busy">A download is already running</string>
+
+    <!-- Install -->
+    <string name="install_title">Install app?</string>
+    <string name="install_message">%1$s has finished downloading. Install it now?</string>
+    <string name="install">Install</string>
+    <string name="install_permission_title">Permission needed</string>
+    <string name="install_permission_message">Android has to allow this browser to install apps before it can hand the file to the installer. The next screen is where you grant it; come back here afterwards and the install will carry on.</string>
+    <string name="open_settings">Open settings</string>
+    <string name="install_no_handler">This system has no package installer to hand the file to</string>
+
+    <!-- Errors -->
+    <string name="ssl_error_title">Connection not verified</string>
+    <string name="ssl_error_message">The certificate for %1$s could not be checked. On a Wi-Fi or charger login page that is normal; anywhere else it is a reason to stop.\n\nContinue anyway?</string>
+    <string name="continue_anyway">Continue</string>
+    <string name="page_error">Could not open the page: %1$s</string>
+    <string name="no_app_for_link">Nothing on this car can open that link</string>
+</resources>

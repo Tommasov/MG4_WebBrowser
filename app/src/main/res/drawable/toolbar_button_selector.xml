@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Round tonal button, the same shape vocabulary the launcher's round_button_selector uses:
+     a tint of the text colour, darker when pressed, no Material chrome. Round rather than
+     rounded-rect because these sit in a row of five and a circle is easier to aim at. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/button_surface_pressed" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/button_surface" />
+        </shape>
+    </item>
+</selector>

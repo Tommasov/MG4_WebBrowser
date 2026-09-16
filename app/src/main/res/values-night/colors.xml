@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark set. The car's own night mode is the one that matters: a white toolbar at night is
+     a lamp in the driver's face, and this is the one surface of the app we control — the
+     pages themselves are lit however their authors decided, and a 2018 Chromium has no
+     prefers-color-scheme to ask with. -->
+<resources>
+    <color name="text_primary">#e6eaec</color>
+    <color name="text_secondary">#99e6eaec</color>
+    <!-- A lighter blue than the day accent: #056eff on a dark chrome is legible but muddy. -->
+    <color name="accent">#4d9bff</color>
+    <color name="accent_pressed">#7db5ff</color>
+
+    <color name="button_surface">#1fe6eaec</color>
+    <color name="button_surface_pressed">#3de6eaec</color>
+
+    <color name="chrome_background">#1c2022</color>
+    <color name="page_background">#1c2022</color>
+
+    <color name="hairline">#1fffffff</color>
+</resources>

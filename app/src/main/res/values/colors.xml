@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Same palette as MG4 Simple Launcher, which took it from the factory SAIC launcher, so the
+     two apps look like they belong to the same head unit. See values-night for the dark set. -->
+<resources>
+    <color name="text_primary">#3c4143</color>
+    <color name="text_secondary">#7f3c4143</color>
+    <color name="accent">#056eff</color>
+    <color name="accent_pressed">#0455cc</color>
+
+    <!-- Tonal surfaces: tints of text_primary, as in the launcher's native-style buttons. -->
+    <color name="button_surface">#1f3c4143</color>
+    <color name="button_surface_pressed">#3d3c4143</color>
+
+    <!-- The toolbar, and the plate behind the favourites grid. Web pages paint their own
+         background over the rest, so this shows during a load and nowhere else. -->
+    <color name="chrome_background">#ffffff</color>
+    <color name="page_background">#ffffff</color>
+
+    <!-- The line under the toolbar: present enough to separate it from the page, faint
+         enough that it never competes with the page's own content. -->
+    <color name="hairline">#14000000</color>
+</resources>

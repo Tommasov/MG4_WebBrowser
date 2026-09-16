@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="address_hint">Dirección o búsqueda</string>
+    <string name="cd_back">Atrás</string>
+    <string name="cd_forward">Adelante</string>
+    <string name="cd_reload">Recargar</string>
+    <string name="cd_stop">Detener</string>
+    <string name="cd_home">Inicio</string>
+    <string name="cd_add_favorite">Añadir a favoritos</string>
+
+    <string name="favorites_title">Favoritos</string>
+    <string name="favorites_empty">Todavía no hay favoritos. Abre una página y usa el botón + de la barra para guardarla aquí.</string>
+    <string name="webview_version">Motor: WebView del sistema %1$s. Forma parte del firmware del coche y nunca recibe actualizaciones.</string>
+    <string name="webview_version_unknown">Motor: la WebView del sistema del coche, que nunca recibe actualizaciones.</string>
+
+    <string name="favorite_added">Añadido a favoritos</string>
+    <string name="favorite_exists">Ya está en favoritos</string>
+    <string name="favorite_nothing_to_add">Abre antes una página</string>
+    <string name="remove_favorite_title">¿Quitar el favorito?</string>
+    <string name="remove_favorite_message">%1$s se quitará de la pantalla de inicio.</string>
+    <string name="remove">Quitar</string>
+    <string name="cancel">Cancelar</string>
+
+    <string name="download_started">Descargando %1$s</string>
+    <string name="download_title">Descarga</string>
+    <string name="download_progress">%1$s — %2$d%%</string>
+    <string name="download_failed">La descarga ha fallado: %1$s</string>
+    <string name="download_saved">Guardado: %1$s</string>
+    <string name="download_busy">Ya hay una descarga en curso</string>
+
+    <string name="install_title">¿Instalar la aplicación?</string>
+    <string name="install_message">%1$s se ha descargado. ¿La instalo ahora?</string>
+    <string name="install">Instalar</string>
+    <string name="install_permission_title">Hace falta un permiso</string>
+    <string name="install_permission_message">Android tiene que permitir que este navegador instale aplicaciones antes de poder pasar el archivo al instalador. En la siguiente pantalla puedes concederlo; vuelve aquí después y la instalación continuará.</string>
+    <string name="open_settings">Abrir ajustes</string>
+    <string name="install_no_handler">Este sistema no tiene un instalador al que pasar el archivo</string>
+
+    <string name="ssl_error_title">Conexión sin verificar</string>
+    <string name="ssl_error_message">No se ha podido comprobar el certificado de %1$s. En una página de acceso al wifi o a un cargador es normal; en cualquier otro sitio es motivo para parar.\n\n¿Continuar de todos modos?</string>
+    <string name="continue_anyway">Continuar</string>
+    <string name="page_error">No se ha podido abrir la página: %1$s</string>
+    <string name="no_app_for_link">Ninguna aplicación de este coche puede abrir ese enlace</string>
+</resources>

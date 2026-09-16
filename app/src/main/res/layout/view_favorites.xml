@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The home screen: favourites as tiles, like the launcher's, not as a list. A list of
+     hostnames read from a metre away is a wall of grey text; a tile is a target. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chrome_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tile_gap"
+            android:text="@string/favorites_title"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/favorites_title_size" />
+
+        <GridLayout
+            android:id="@+id/favorites_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="5" />
+
+        <TextView
+            android:id="@+id/favorites_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tile_gap"
+            android:text="@string/favorites_empty"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/tile_title_size"
+            android:visibility="gone" />
+
+        <!-- The engine notice. It belongs on screen, not only in the store listing: this is
+             a 2018 Chromium that has not had a security patch in years, and the person using
+             it should be able to find that out without reading a description. It doubles as
+             the answer to "which WebView does this car actually have?". -->
+        <TextView
+            android:id="@+id/engine_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_padding"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/footnote_size" />
+    </LinearLayout>
+</ScrollView>

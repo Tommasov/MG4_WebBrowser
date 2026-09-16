@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Favourite tile. Same tonal-surface-plus-pressed-state pattern as the launcher's cards,
+     drawn as a shape rather than nine-patch artwork: the launcher's card PNGs bake in a drop
+     shadow that stretches with the view, and every padding value over there exists to keep
+     text off that shadow. A shape has no shadow to work around. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/native_button_radius" />
+            <solid android:color="@color/button_surface_pressed" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/native_button_radius" />
+            <solid android:color="@color/button_surface" />
+        </shape>
+    </item>
+</selector>

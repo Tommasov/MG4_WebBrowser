@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Chromeless DayNight theme, like the launcher's: this app draws its own toolbar and
+         an action bar would only take a band off a 720px-tall screen. -->
+    <style name="Theme.MG4Browser" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/page_background</item>
+        <item name="android:statusBarColor">@color/chrome_background</item>
+        <item name="android:navigationBarColor">@color/chrome_background</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+</resources>

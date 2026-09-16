@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One screen, no nested menus: if a thing does not fit here it probably is not needed.
+     Toolbar on top (so the IME never covers the field being typed into), a progress bar under
+     it, and the page filling everything left. The favourites home sits in the same frame as
+     the WebView and is shown instead of it. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_background">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/chrome_background"
+        android:paddingStart="@dimen/toolbar_padding_h"
+        android:paddingEnd="@dimen/toolbar_padding_h">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="@dimen/toolbar_button_size"
+            android:layout_height="@dimen/toolbar_button_size"
+            android:layout_marginEnd="@dimen/toolbar_gap"
+            android:background="@drawable/toolbar_button_selector"
+            android:contentDescription="@string/cd_back"
+            android:padding="@dimen/toolbar_icon_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back" />
+
+        <ImageButton
+            android:id="@+id/button_forward"
+            android:layout_width="@dimen/toolbar_button_size"
+            android:layout_height="@dimen/toolbar_button_size"
+            android:layout_marginEnd="@dimen/toolbar_gap"
+            android:background="@drawable/toolbar_button_selector"
+            android:contentDescription="@string/cd_forward"
+            android:padding="@dimen/toolbar_icon_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_forward" />
+
+        <!-- Reload and stop are one button: they are never both meaningful at once, and a
+             fifth round target in this row would cost the address field width it needs. -->
+        <ImageButton
+            android:id="@+id/button_reload"
+            android:layout_width="@dimen/toolbar_button_size"
+            android:layout_height="@dimen/toolbar_button_size"
+            android:layout_marginEnd="@dimen/toolbar_gap"
+            android:background="@drawable/toolbar_button_selector"
+            android:contentDescription="@string/cd_reload"
+            android:padding="@dimen/toolbar_icon_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_reload" />
+
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="@dimen/toolbar_button_size"
+            android:layout_height="@dimen/toolbar_button_size"
+            android:layout_marginEnd="@dimen/toolbar_gap"
+            android:background="@drawable/toolbar_button_selector"
+            android:contentDescription="@string/cd_home"
+            android:padding="@dimen/toolbar_icon_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_home" />
+
+        <!-- textUri keeps the IME's URL layout (a visible "/" and ".com") while still
+             offering a space bar, so the same field takes a search phrase. -->
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/toolbar_button_size"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/toolbar_gap"
+            android:background="@drawable/address_field_background"
+            android:hint="@string/address_hint"
+            android:imeOptions="actionGo|flagNoExtractUi"
+            android:importantForAutofill="no"
+            android:inputType="textUri"
+            android:maxLines="1"
+            android:paddingStart="@dimen/address_padding_h"
+            android:paddingEnd="@dimen/address_padding_h"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="@dimen/address_text_size" />
+
+        <ImageButton
+            android:id="@+id/button_add_favorite"
+            android:layout_width="@dimen/toolbar_button_size"
+            android:layout_height="@dimen/toolbar_button_size"
+            android:background="@drawable/toolbar_button_selector"
+            android:contentDescription="@string/cd_add_favorite"
+            android:padding="@dimen/toolbar_icon_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_add" />
+    </LinearLayout>
+
+    <!-- The car's connection is slow enough that "is it doing anything at all?" is a real
+         question from the driver's seat, so the answer is a bar the width of the screen
+         rather than a spinner. -->
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/progress_height"
+        android:indeterminate="false"
+        android:max="100"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hairline" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Carries its own id (@id/home); an include must not override it, or the root
+             view inside ends up with two. -->
+        <include layout="@layout/view_favorites" />
+    </FrameLayout>
+</LinearLayout>

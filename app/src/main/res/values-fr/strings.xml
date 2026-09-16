@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- En ressource Android, l'apostrophe doit toujours être précédée d'une barre oblique
+     inverse — d'où les \' ci-dessous. -->
+<resources>
+    <string name="address_hint">Adresse ou recherche</string>
+    <string name="cd_back">Retour</string>
+    <string name="cd_forward">Suivant</string>
+    <string name="cd_reload">Recharger</string>
+    <string name="cd_stop">Arrêter</string>
+    <string name="cd_home">Accueil</string>
+    <string name="cd_add_favorite">Ajouter aux favoris</string>
+
+    <string name="favorites_title">Favoris</string>
+    <string name="favorites_empty">Aucun favori pour l\'instant. Ouvrez une page, puis utilisez le bouton + de la barre pour la garder ici.</string>
+    <string name="webview_version">Moteur : WebView du système %1$s. Elle fait partie du micrologiciel de la voiture et ne reçoit jamais de mise à jour.</string>
+    <string name="webview_version_unknown">Moteur : la WebView du système de la voiture, qui ne reçoit jamais de mise à jour.</string>
+
+    <string name="favorite_added">Ajouté aux favoris</string>
+    <string name="favorite_exists">Déjà dans les favoris</string>
+    <string name="favorite_nothing_to_add">Ouvrez d\'abord une page</string>
+    <string name="remove_favorite_title">Retirer le favori ?</string>
+    <string name="remove_favorite_message">%1$s sera retiré de l\'écran d\'accueil.</string>
+    <string name="remove">Retirer</string>
+    <string name="cancel">Annuler</string>
+
+    <string name="download_started">Téléchargement de %1$s</string>
+    <string name="download_title">Téléchargement</string>
+    <string name="download_progress">%1$s — %2$d%%</string>
+    <string name="download_failed">Échec du téléchargement : %1$s</string>
+    <string name="download_saved">Enregistré : %1$s</string>
+    <string name="download_busy">Un téléchargement est déjà en cours</string>
+
+    <string name="install_title">Installer l\'application ?</string>
+    <string name="install_message">%1$s a été téléchargé. L\'installer maintenant ?</string>
+    <string name="install">Installer</string>
+    <string name="install_permission_title">Autorisation nécessaire</string>
+    <string name="install_permission_message">Android doit autoriser ce navigateur à installer des applications avant qu\'il puisse remettre le fichier à l\'installateur. L\'écran suivant sert à l\'accorder ; revenez ensuite ici et l\'installation reprendra.</string>
+    <string name="open_settings">Ouvrir les paramètres</string>
+    <string name="install_no_handler">Ce système n\'a pas d\'installateur à qui remettre le fichier</string>
+
+    <string name="ssl_error_title">Connexion non vérifiée</string>
+    <string name="ssl_error_message">Le certificat de %1$s n\'a pas pu être vérifié. Sur une page de connexion Wi-Fi ou de borne de recharge, c\'est normal ; ailleurs, c\'est une raison de s\'arrêter.\n\nContinuer quand même ?</string>
+    <string name="continue_anyway">Continuer</string>
+    <string name="page_error">Impossible d\'ouvrir la page : %1$s</string>
+    <string name="no_app_for_link">Aucune application de cette voiture ne peut ouvrir ce lien</string>
+</resources>

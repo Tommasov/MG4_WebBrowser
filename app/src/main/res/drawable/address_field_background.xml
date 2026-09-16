@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The address field reads as a recessed surface rather than an underlined EditText: at a
+     metre away a 1px underline is invisible, and the driver needs to see where to tap. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="@dimen/native_button_radius" />
+    <solid android:color="@color/button_surface" />
+</shape>
