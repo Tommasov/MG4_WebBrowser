@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Adaptive-icon foreground on the usual 108x108 canvas.
-
-     A meridians-and-parallels globe, drawn as one filled shape with the grid lines left as
-     negative space. That keeps it a solid white silhouette like the launcher’s rocket — a
-     stroked outline would have read as thinner and lighter beside it — while being far more
-     recognisably a globe than the plain sphere it replaces.
-
-     Drawn in a 24x24 space, scaled by 2 to 48 units and shifted by 30 to centre it: 48 of 108
-     is 44%, the same proportion the launcher’s rocket occupies (192px on a 432px canvas).
-     A VectorDrawable group applies its scale before its translate, so those two numbers land
-     the artwork centred inside the mask’s safe zone. -->
+<!-- Themed-icon layer: the same globe with no background, tinted by Android 13+ to the
+     wallpaper palette. This car is API 28 and will never use it, but the launcher declares
+     one, and an icon set complete on one app and not the other is a difference that surfaces
+     later on somebody else’s device. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"

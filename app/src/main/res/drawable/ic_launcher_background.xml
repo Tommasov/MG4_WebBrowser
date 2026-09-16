@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Literal colour, not @color/accent: a launcher icon must not change with night mode. -->
+<!-- The launcher's icon gradient, sampled from its own artwork
+     (mipmap-xxxhdpi/ic_launcher_background.png): #536dfe at the top-left corner running to
+     #6a3de8 at the bottom-right. Angle 315 is that diagonal — Android measures shape-gradient
+     angles anticlockwise from east, so 315 starts north-west and ends south-east.
+
+     Literal colours, not @color references: a launcher icon must not change with night mode.
+     It fills the whole square; the circle is the system's mask, not ours. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="#056eff" />
+    <gradient
+        android:angle="315"
+        android:endColor="#6a3de8"
+        android:startColor="#536dfe"
+        android:type="linear" />
 </shape>

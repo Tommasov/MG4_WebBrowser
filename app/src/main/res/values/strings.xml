@@ -2,7 +2,7 @@
 <!-- Default (English). Translations in values-it, values-de, values-es, values-fr.
      An apostrophe in an Android string resource must be escaped with a backslash. -->
 <resources>
-    <string name="app_name">MG4 Browser</string>
+    <string name="app_name">Browser</string>
 
     <!-- Toolbar -->
     <string name="address_hint">Address or search</string>
