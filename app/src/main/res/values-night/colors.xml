@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Dark set, taken from MG4 Simple Launcher rather than invented.
-     The text colours and the accent are its values-night palette verbatim; the greys are
-     sampled out of the SAIC night artwork it draws with, because the launcher gets its dark
-     surfaces from PNGs and not from colour values, so there was nothing to copy — only
-     something to measure.
+<!-- Dark set, taken from MG4 Simple Launcher rather than invented, and re-taken on
+     18 September 2026 because the first copy had gone stale.
 
-       drawable-night/bg_home.png        #2f2f31 → #2a2a2c, centre #2d2e2e   (the ground)
-       drawable-night/bg_normal.png      #585a5e → #444649, centre #4e5154   (a card face)
+     The launcher changed its night palette after this file was written, and a palette copied
+     once is a palette that drifts. Two values moved, and both were visible from the driver's
+     seat: this app was the only one in the suite with a darker blue and with solid grey
+     buttons where everything else had a translucent wash. The lesson is in the file rather
+     than in a commit message because the same thing will happen again.
 
-     An earlier guess at #1c2022 put this app a good deal darker and cooler than the launcher
-     beside it, which is exactly the mismatch a shared palette exists to prevent. -->
+     The greys below are still sampled out of the SAIC night artwork the launcher draws with,
+     since it takes its dark surfaces from PNGs and not from colour values:
+
+       drawable-night/bg_home.png        #2f2f31 -> #2a2a2c, centre #2d2e2e   (the ground) -->
 <resources>
     <color name="text_primary">#f2f5f7</color>
     <color name="text_secondary">#99ffffff</color>
 
-    <!-- The same blue as daytime. A lighter one reads better on a dark ground, and the
-         launcher still keeps this one at night: looking like the app next to it matters more
-         here than winning a contrast comparison against it. -->
-    <color name="accent">#056eff</color>
-    <color name="accent_pressed">#0455cc</color>
+    <!-- Not the daytime blue. SAIC's own #056eff falls to about 3:1 against this background,
+         where a line of text wants 4.5:1, and it reads muddy rather than bright. The
+         constructor solves it the same way in its own dark theme, lifting the charging accent
+         from #4b8fff to #b2cfff; this value sits between the two at 6.2:1. It is the
+         launcher's and MG4 360 Camera's night accent, to the digit. -->
+    <color name="accent">#7fb0ff</color>
+    <color name="accent_pressed">#5d95e6</color>
 
-    <!-- The launcher's night card face. Lighter than the ground, as its cards are — not the
-         darker tint its drawer buttons use, which at night all but disappears against the
-         background it sits on. -->
-    <color name="button_surface">#4e5154</color>
-    <!-- Its own pressed artwork is within a point or two of the resting state, which is a
-         quirk not worth reproducing: a button that gives no feedback on a screen this far
-         away is a button you press twice. -->
-    <color name="button_surface_pressed">#5c5f63</color>
+    <!-- The tonal surfaces invert at night: a wash of white rather than one of black, which
+         over a dark ground is the difference between a visible surface and none. This app
+         used to use the launcher's card artwork colour, an opaque #4e5154, which made its
+         tiles heavier than every other panel in the suite. -->
+    <color name="button_surface">#26ffffff</color>
+    <color name="button_surface_pressed">#4dffffff</color>
 
     <color name="chrome_background">#2d2e2e</color>
     <color name="page_background">#2d2e2e</color>

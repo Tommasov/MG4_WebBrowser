@@ -24,10 +24,17 @@
          driver's seat. -->
     <dimen name="progress_height">6dp</dimen>
 
-    <!-- Favourites grid. Five tiles across: 1920 less 2x24 padding leaves 1872, and five
-         340dp tiles with 16dp between them come to 1764 — the slack keeps the row off the
-         screen edges at the far right, where the bezel curves on this head unit. -->
-    <dimen name="tile_width">340dp</dimen>
+    <!-- Favourites grid. The number of columns and the width of a tile are worked out at
+         runtime from the screen, and this is the smallest a tile may be before a column is
+         dropped instead.
+
+         The grid used to be five fixed 340dp tiles, sized against a screen assumed to be
+         1920 wide. The car reported itself on 18 September 2026: 1778x720 at 160 dpi, so a
+         dp is a pixel and the row had 1730dp to live in. Five tiles each carrying a trailing
+         16dp margin want 1780, so the fifth one was cut by 50dp on every MG4 — while the
+         emulator, at 1920, showed it whole. A layout that only fits the machine it was
+         written on is a layout that has not been written yet. -->
+    <dimen name="tile_width_min">300dp</dimen>
     <dimen name="tile_height">180dp</dimen>
     <dimen name="tile_gap">16dp</dimen>
     <dimen name="tile_padding">20dp</dimen>

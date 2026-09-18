@@ -4,7 +4,7 @@
      2018 Chromium hands back are 16 or 32 pixels, and blown up to badge size on a screen read
      from a metre away they are mush. A letter stays a letter. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="@dimen/tile_width"
+    android:layout_width="@dimen/tile_width_min"
     android:layout_height="@dimen/tile_height"
     android:orientation="horizontal"
     android:gravity="center_vertical"

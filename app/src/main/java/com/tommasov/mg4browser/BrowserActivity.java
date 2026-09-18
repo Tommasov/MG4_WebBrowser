@@ -406,6 +406,9 @@ public class BrowserActivity extends AppCompatActivity {
 
         LayoutInflater inflater = LayoutInflater.from(this);
         int gap = getResources().getDimensionPixelSize(R.dimen.tile_gap);
+        int columns = columnsThatFit(gap);
+        int tileWidth = tileWidthFor(columns, gap);
+        favoritesGrid.setColumnCount(columns);
         for (Favorites.Entry entry : entries) {
             View tile = inflater.inflate(R.layout.item_favorite, favoritesGrid, false);
             TextView badge = tile.findViewById(R.id.tile_badge);
@@ -425,10 +428,44 @@ public class BrowserActivity extends AppCompatActivity {
             });
 
             GridLayout.LayoutParams params = (GridLayout.LayoutParams) tile.getLayoutParams();
+            params.width = tileWidth;
             params.setMargins(0, 0, gap, gap);
             tile.setLayoutParams(params);
             favoritesGrid.addView(tile);
         }
+    }
+
+    /**
+     * How many tiles fit across this screen, rather than across the screen this was written on.
+     *
+     * <p>Measured from the display rather than from a laid-out view, because it is needed
+     * before the first tile is inflated and the answer does not depend on layout: the row
+     * lives inside the home screen's own padding, and that is a constant.
+     *
+     * <p>Every tile carries a trailing gap, including the last in a row, so a column costs a
+     * tile plus a gap. The trailing one on the right-hand tile falls in the padding where
+     * nobody sees it — which is why it was possible to overlook that it still takes up room,
+     * and why the fifth tile was clipped on the car for a month.
+     */
+    private int columnsThatFit(int gap) {
+        int minimum = getResources().getDimensionPixelSize(R.dimen.tile_width_min);
+        return Math.max(1, availableWidth() / (minimum + gap));
+    }
+
+    /**
+     * The width to give each tile so that the row fills the screen exactly.
+     *
+     * <p>Stretching them beats leaving a gap at the right: at 1778 a five-column row of the
+     * old fixed 340dp tiles would have left most of a sixth tile of dead space, and dropping
+     * to four columns would have left more still.
+     */
+    private int tileWidthFor(int columns, int gap) {
+        return availableWidth() / columns - gap;
+    }
+
+    private int availableWidth() {
+        int padding = getResources().getDimensionPixelSize(R.dimen.screen_padding);
+        return getResources().getDisplayMetrics().widthPixels - 2 * padding;
     }
 
     /** Long press is the only way to remove one: there is no menu to put a Delete in. */

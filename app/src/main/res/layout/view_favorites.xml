@@ -22,6 +22,8 @@
             android:textColor="@color/text_primary"
             android:textSize="@dimen/favorites_title_size" />
 
+        <!-- columnCount is set in code from the width of this particular screen. The
+             value here is only what the preview draws with. -->
         <GridLayout
             android:id="@+id/favorites_grid"
             android:layout_width="wrap_content"
